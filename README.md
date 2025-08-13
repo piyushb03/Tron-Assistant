@@ -1,43 +1,46 @@
-Tron - AI Voice Assistant for Revolt Motors
+# Tron - AI Voice Assistant for Revolt Motors
+
 Tron is a real-time, conversational voice assistant built to provide information about Revolt Motors. It uses the Google Gemini API for its conversational intelligence and is designed to be an interactive, voice-first experience.
 
-This project replicates the core functionality of a modern web-based voice assistant, featuring seamless conversation flow, user interruption, and a clean user interface with light and dark themes. The entire voice processing (Speech-to-Text and Text-to-Speech) is handled for free by the browser's built-in Web Speech API.
+This project replicates the core functionality of a modern web-based voice assistant, featuring seamless conversation flow, user interruption, and a clean user interface with light and dark themes. The entire voice processing (Speech-to-Text and Text-to-Speech) is handled for free by the browser's built-in **Web Speech API**.
 
-Features
-Voice-to-Voice Conversation: Speak to the assistant and receive a spoken response.
+---
 
-User Interruption: The user can interrupt the AI at any time by clicking the record button while it is speaking.
+## Features
 
-Domain-Specific Knowledge: Tron's personality and knowledge are configured to answer questions exclusively about Revolt Motors.
+* **Voice-to-Voice Conversation:** Speak to the assistant and receive a spoken response.
+* **User Interruption:** The user can interrupt the AI at any time by clicking the record button while it is speaking.
+* **Domain-Specific Knowledge:** Tron's personality and knowledge are configured to answer questions exclusively about Revolt Motors.
+* **Dark/Light Theme:** Includes a theme toggle for user preference.
+* **Zero Voice API Costs:** Utilizes the browser's free, built-in Web Speech API for both STT and TTS.
+* **Real-time & Low Latency:** Responses are streamed from the server to the client for a more natural conversational feel.
 
-Dark/Light Theme: Includes a theme toggle for user preference.
+---
 
-Zero Voice API Costs: Utilizes the browser's free, built-in Web Speech API for both STT and TTS.
+## Technology Stack
 
-Real-time & Low Latency: Responses are streamed from the server to the client for a more natural conversational feel.
+* **Backend:** Node.js, Express.js
+* **Real-time Communication:** WebSockets (`ws` library)
+* **AI Model:** Google Gemini API (`@google/generative-ai`)
+* **Voice Processing:** Browser Web Speech API (SpeechRecognition and SpeechSynthesis)
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript
 
-Technology Stack
-Backend: Node.js, Express.js
+---
 
-Real-time Communication: WebSockets (ws library)
+## Setup and Installation
 
-AI Model: Google Gemini API (@google/generative-ai)
-
-Voice Processing: Browser Web Speech API (SpeechRecognition and SpeechSynthesis)
-
-Frontend: HTML5, CSS3, Vanilla JavaScript
-
-Setup and Installation
 Follow these steps to get the project running on your local machine.
 
-1. Prerequisites
-Node.js: Make sure you have Node.js installed (version 18.x or higher). You can download it from nodejs.org.
+### 1. Prerequisites
 
-npm: Node Package Manager is included with Node.js.
+* **Node.js:** Make sure you have Node.js installed (version 18.x or higher). You can download it from [nodejs.org](https://nodejs.org/).
+* **npm:** Node Package Manager is included with Node.js.
 
-2. Clone the Repository
+### 2. Clone the Repository
+
 Clone this project to your local machine or download the source code files.
 
+```bash
 git clone <your-repository-url>
 cd tron-assistant
 
